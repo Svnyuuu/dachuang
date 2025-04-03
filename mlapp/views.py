@@ -13,7 +13,7 @@ import base64
 
 def model_training(request):
     # 加载数据
-    dataset = pd.read_csv('./processed/randel.csv')
+    dataset = pd.read_csv('./data/randel.csv')
 
     # 数据处理
     X = dataset.iloc[:, :-1].values

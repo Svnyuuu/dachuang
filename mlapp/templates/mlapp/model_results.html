@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Results</title>
+</head>
+<body>
+    <h1>Model Training Results</h1>
+    <h2>Accuracy: {{ accuracy }}</h2>
+
+    <h3>Classification Report</h3>
+    <pre>{{ report }}</pre>
+
+    <h3>ROC Curve</h3>
+    <img src="data:image/png;base64,{{ roc_image }}" alt="ROC Curve">
+
+</body>
+</html>
